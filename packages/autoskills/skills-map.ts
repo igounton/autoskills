@@ -1047,6 +1047,17 @@ export const SKILLS_MAP: Technology[] = [
     skills: ["wshobson/agents/fastapi-templates", "mindrally/skills/fastapi-python"],
   },
   {
+    id: "fastmcp",
+    name: "FastMCP",
+    detect: {
+      configFileContent: {
+        files: ["pyproject.toml", "requirements.txt", "setup.py", "Pipfile"],
+        patterns: ["fastmcp", "FastMCP"],
+      },
+    },
+    skills: ["sharanharsoor/skills/fastmcp"],
+  },
+  {
     id: "django",
     name: "Django",
     detect: {
